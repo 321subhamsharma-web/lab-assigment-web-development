@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab assignment 2</title>
+    <style>
+        @font-face {
+            font-family:"my font";
+            src: url(/fonts/Pretoria\ Regular.ttf) format(ttf);
+        }
+        body {
+            
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            font-family: var(blender);
+            margin: 0;
+        }
+        .header p {
+            margin: 5px 0 0;
+        }
+        .profile {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 5px solid #ddd;
+        }
+        .section {
+            padding: 20px;
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+        .section h2 {
+            text-align: center;
+            color: #333;
+        }
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        .skills-table th, .skills-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .skills-table th {
+            background-color: #f2f2f2;
+        }
+        .project {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .contact-form {
+            display: grid;
+            gap: 15px;
+        }
+        .contact-form .form-group {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            align-items: center;
+        }
+        .contact-form label {
+            font-weight: bold;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            width: auto;
+            justify-self: end;
+        }
+        footer{
+             background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>My Portfolio</h1>
+            <p>Welcome to my portfolio</p>
+        </div>
+
+        <div class="section" id="about">
+            <h2>About Me</h2>
+            <div class="profile">
+                <img src="shubham.img.jpg" alt="Profile Picture">
+                <p>Hello! </p>
+                <br>
+                <p>My name is shubham sharma </p>
+                <br>
+                <p> My roll . no. 2501730396</p>
+
+            </div>
+        </div>
+
+        <div class="section" id="skills">
+            <h2>My Skills</h2>
+            <table class="skills-table">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Beginner</td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section" id="projects">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3> other skill</h3>
+                <p>  i my own youtube channel who have 6k subscribers </p>
+                <br>
+                <p> i know to use of blender
+                     <br>
+                i make 3d model of any thing  </p>
+                <br>
+
+            </div>
+            <div class="project">
+                <h3> about me </h3>
+                <p> my name  is shubham sharma 
+                    <br>
+                    I from himachal pradesh 
+                    <br>
+
+                                </p>
+            </div>
+        </div>
+
+        <div class="section" id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+
+
+        thaks for wisting on my profile 
+
+    </footer>
+</body>
+</html>
